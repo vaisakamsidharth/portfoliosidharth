@@ -1,0 +1,788 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>portfolio || tailwind css website</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- remix -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+  <script src="mail.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "DGeZxpiUbitXtr8yd",
+        });
+    })();
+  </script>
+
+
+</head>
+<body>
+  <!-- header <section> -->
+    <header id="navbar" class="sticky top-0 z-50 duration-300">
+      <nav class="relative container flex justify-between items-center">
+        <div class="py-5">
+            <img src="./images/download.jpeg" alt="logo" id="logo" class="w-10 md:w-14">
+            <img src="./images/downloads.jpeg" alt="white-logo-dark" id="white-logo-dark" class="w-10 hidden md:w-14">
+          
+        </div>
+
+        <div id="nav-menu" class="hidden  top-0 left-0 bg-primaryColor w-full py-24 lg:block lg:bg-transparent
+        lg:static lg:py-0 lg:border-none lg:w-auto lg:ml-auto">
+          <ul class="flex flex-col items-center text-center gap-8 lg:flex-row
+          lg:gap-5">
+
+            <li>
+              <a href="#quality_services" class="nav-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#works" class="nav-link">Works</a>
+            </li>
+
+            <li>
+              <a href="#resume" class="nav-link">Resume</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+
+            <li class="btn ml-10">
+              <button class="z-10">
+                <span>Hire-Me!</span>
+              </button>
+            </li>
+
+          </ul>
+
+          <div id="nav-close" class="absolute top-6 right-3 md:right-8 text-whiteColor text-3xl cursor-pointer
+          lg:hidden ">
+            <i class="ri-close-large-line"></i>
+          </div>
+
+        </div>
+
+        <div class="flex items-center gap-5">
+            <i class="ri-moon-line cursor-pointer ml-4 text-2xl" id="theme-toggle"></i>
+            <div id="hamburger" class="lg:hidden cursor-pointer">
+            <i class="ri-menu-2-line cursor-pointer text-2xl"></i>
+            </div>
+        </div>
+
+      </nav>
+    </header>
+    <main>
+        <!-- hero <section -->
+         <section id="hero" class="relative py-5">
+            <!-- blob -->
+             <div class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen 
+             rounded-full blur-[150px] opacity-50">
+
+             </div>
+
+             <div class="container">
+                <!-- bg image -->
+                 <div class="hidden md:block absolute top-0 left-[30%] lg:left-[35%]
+                 animate-scaleAnimation">
+                    <p class="font-Londrina text-[400px] lg:text-[450px]
+                    text-primaryColorLight uppercase -z-10 opacity-5">Hi</p>
+                 </div>
+
+                 <!-- hero content  -->
+
+                 <div class="flex items-center gap-5">
+                    <div class="space-y-2 md:w-1/2">
+                        <h3 class="text-2xl md:text-3xl lg:text-4xl
+                         font-bold"> I am Sidharth VK</h3>
+                        <h1>
+                            <span class="title">Software Devoloper Backend +</span>
+                            <br>
+                            <span class="title">FrontEnd Devoloper intern</span>
+                        </h1>
+
+                        <div class="relative flex justify-center md:hidden">
+                            <!-- blob -->
+                            <div class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen 
+                            rounded-full blur-[150px] opacity-50"class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen 
+                            rounded-full blur-[150px] opacity-50">
+                            </div>
+
+                             <img src="/images/sidhpic.jpg" alt="person"
+                             class="my-10 max-w-[90%] duration-300
+                             origin-center rotate-[4.5deg] border-2
+                             border-primaryColor rounded-[38px] hover:rotate-0
+                             hover:border-primaryColorLight">
+                        </div>
+
+                        <p class="max-w-xl text-xl pb-5">I'm a Python/Django backend developer with a background in electronics
+                             and experience as a Software Engineer.
+                        </p>
+
+                        <div class="flex items-center flex-wrap gap-5">
+                            <button class="btn_outline">
+                                Download cv <i class="fa-solid fa-download"></i>
+                            </button>
+
+                            <div class="flex items-center gap-5">
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-twitter z-10"></i>
+                                </div>
+
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-linkedin z-10"></i>
+                                </div>
+
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-youtube z-10"></i>
+                                </div>
+
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-github z-10"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- hero image  -->
+
+                    <div class="relative hidden md:w-1/2 md:flex
+                    justify-center">
+                            <!-- blob -->
+                            <div class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen 
+                            rounded-full blur-[150px] opacity-50"class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen 
+                            rounded-full blur-[150px] opacity-50">
+                            </div>
+
+                             <img src="/images/sidhpic.jpg" alt="person"
+                             class="my-10 md-w-full lg:max-w-[80%] duration-300
+                             origin-center rotate-[4.5deg] border-2
+                             border-primaryColor rounded-[38px] hover:rotate-0
+                             hover:border-primaryColorLight">
+                        </div>
+                      
+                 </div>
+
+                 <!-- hero footer -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">2</p>
+                        <p>
+                            years of <br> experience
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">10+</p>
+                        <p>
+                            Project <br> completed
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">4+</p>
+                        <p>
+                            leetcode <br> questions
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">2</p>
+                        <p>
+                            badges of <br> Hacker Rank
+                        </p>
+                    </div>
+                  </div>
+             </div>
+
+         </section>
+
+
+         <!-- my quality Services -->
+        <section id="quality_services" class="bg-sectionColor dark:bg-darkBodycolor">
+          <div class="container">
+            <div class="flex flex-col items-center gap-5 text-center">
+            <h2 class="subtitle">My Quality Services</h2>
+            <p class="max-w-2xl">I craft scalable backend solutions using Django and Python,
+               specializing in API development, dashboard systems,
+                and secure web architectures for real-world business needs.
+            </p>
+          </div>
+
+          <!-- list section  -->
+           <div class="my-10">
+            <!-- item 1 -->
+            <div class="service_item">
+              <div class="text-xl font-bold flex items-center gap-3
+              md:text-2xl md:w-[40%]">
+                <p class="text-primaryColorLight hover:text-whiteColor">01</p>
+                <p>API Development</p>
+              </div>
+
+              <div class="ml-auto text-2xl origin-center rotate-45
+              md:order-last">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+
+              <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                <p>I build scalable and secure RESTful APIs using Django REST Framework to power modern web and mobile applications.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="service_item">
+              <div class="text-xl font-bold flex items-center gap-3
+              md:text-2xl md:w-[40%]">
+                <p class="text-primaryColorLight hover:text-whiteColor">02</p>
+                <p>Dashboard Builder</p>
+              </div>
+
+              <div class="ml-auto text-2xl origin-center rotate-45
+              md:order-last">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+
+              <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                <p>I develop dynamic, data-driven dashboards with Django, helping businesses visualize performance and make informed decisions.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class="service_item">
+              <div class="text-xl font-bold flex items-center gap-3
+              md:text-2xl md:w-[40%]">
+                <p class="text-primaryColorLight hover:text-whiteColor">03</p>
+                <p>Backend Architecture</p>
+              </div>
+
+              <div class="ml-auto text-2xl origin-center rotate-45
+              md:order-last">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+
+              <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                <p>I design and implement robust backend systems using Django, ensuring performance, maintainability, and security.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="service_item">
+              <div class="text-xl font-bold flex items-center gap-3
+              md:text-2xl md:w-[40%]">
+                <p class="text-primaryColorLight hover:text-whiteColor">04</p>
+                <p>Authentication & Authorization</p>
+              </div>
+
+              <div class="ml-auto text-2xl origin-center rotate-45
+              md:order-last">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+
+              <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                <p>I implement secure user authentication and role-based access control using Django and JWT/OAuth2 to protect your application.
+                </p>
+              </div>
+            </div>
+
+           </div>
+
+          </div>
+          
+
+        </section>
+
+        <!-- MY RECENT WORKS  -->
+
+        <section id="recent_works" class="container">
+          <div class="flex flex-col items-center gap-5 text-center">
+            <h2 class="subtitle">My Recent Works</h2>
+            <p class="max-w-2xl">Explore some of my recent projects where I turned business concepts into robust
+               and scalable web applications using Python, Django, and modern frontend tools.
+                Each project reflects real-world problem-solving and clean, maintainable code.</p>
+          </div>
+
+          <div class="relative w-max mx-auto my-10 h-10 text-xs grid
+          grid-cols-4 items-center px-[3px] rounded-full bg-sectionColor
+          dark:bg-darkSectionColor border  border-primaryColor overflow-hidden
+          transition md:h-12 md:text-base">
+            <!-- indicator -->
+             <div class="indicator absolute h-9 my-auto top-0 bottom-0
+             left-0 rounded-full bg-primaryColorLight md:h-11"></div>
+
+             <button class="tab relative block h-8 px-3 rounded-full text-whiteColor md:h-10 md:px-6" data-tabs="all">All</button>
+             <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="devolop">API Development</button>
+             <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="dashboard">Dashboard Builder</button>
+             <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="app">Apps</button>
+
+
+          </div>
+
+          <div class="mt-6 relative rounded-3-xl">
+            <!-- blob -->
+             <div class="absolute top-1/2 left-1/2 transform
+             -translate-x-1/2 -translate-y-1/2 w-80 h-80
+             bg-primaryColorLight mix-blend-screen rounded-full blur-[150px]
+             opacity-50"></div>
+
+             <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2">
+              <!-- devolop  -->
+               <li class="work_card devolop relative bg-sectionColor 
+               dark:bg-darkSectionColor p-5 rounded-2xl border 
+               border-transparent hover:border-primaryColor duration-300
+               overflow-hidden lg:p-8">
+                <img src="./images/Screenshot 2025-07-18 215151.png" alt="recent works" class="w-full">
+
+
+                <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                  <div class="flex items-center justify-between 
+                  bg-gradient-to-r from-primaryColorLight 
+                  to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                    <div>
+                      <p class="text-2xl font-bold lg:text-3xl">design</p>
+                      <p>I analyze intricate user experience</p>
+                    </div>
+
+                    <div class="text-2xl rotate-45" >
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                  </div>
+                </div>
+               </li>
+
+              
+               <li class="work_card devolop relative bg-sectionColor 
+               dark:bg-darkSectionColor p-5 rounded-2xl border 
+               border-transparent hover:border-primaryColor duration-300
+               overflow-hidden lg:p-8">
+                <img src="./images/Screenshot 2025-07-18 215212.png" alt="recent works" class="w-full">
+
+
+                <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                  <div class="flex items-center justify-between 
+                  bg-gradient-to-r from-primaryColorLight 
+                  to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                    <div>
+                      <p class="text-2xl font-bold lg:text-3xl">design</p>
+                      <p>I analyze intricate user experience</p>
+                    </div>
+
+                    <div class="text-2xl rotate-45" >
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                  </div>
+                </div>
+               </li>
+
+               <!-- dashboard -->
+               <li class="work_card dashboard relative bg-sectionColor 
+               dark:bg-darkSectionColor p-5 rounded-2xl border 
+               border-transparent hover:border-primaryColor duration-300
+               overflow-hidden lg:p-8">
+                <img src="./images/Screenshot 2025-07-18 215344.png" alt="recent works" class="w-full">
+
+
+                <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                  <div class="flex items-center justify-between 
+                  bg-gradient-to-r from-primaryColorLight 
+                  to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                    <div>
+                      <p class="text-2xl font-bold lg:text-3xl">design</p>
+                      <p>I analyze intricate user experience</p>
+                    </div>
+
+                    <div class="text-2xl rotate-45" >
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                  </div>
+                </div>
+               </li>
+
+               <!-- app  -->
+
+               
+               <li class="work_card app relative bg-sectionColor 
+               dark:bg-darkSectionColor p-5 rounded-2xl border 
+               border-transparent hover:border-primaryColor duration-300
+               overflow-hidden lg:p-8">
+                <img src="./images/Screenshot 2025-07-18 215534.png" alt="recent works" class="w-full">
+
+
+                <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                  <div class="flex items-center justify-between 
+                  bg-gradient-to-r from-primaryColorLight 
+                  to-primaryColor text-whiteColor p-5 rounded-t-2xl">
+                    <div>
+                      <p class="text-2xl font-bold lg:text-3xl">design</p>
+                      <p>I analyze intricate user experience</p>
+                    </div>
+
+                    <div class="text-2xl rotate-45" >
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                  </div>
+                </div>
+               </li>
+
+
+             </ul>
+          </div>
+          
+        </section>
+        
+        <!-- Experience and Education -->
+
+        <section id="exp_edu" class="bg-sectionColor dark:bg-darkSectionColor">
+          <div class="container w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- experience -->
+             <div>
+              <div class="flex items-center gap-3">
+                <div class="text-2xl text-primaryColorLight 
+                md:text-3xl lg:text-4xl">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+
+                <h2 class="subtitle">Experience</h2>
+              </div>
+
+              <div class="my-10 space-y-5 md:space-y-10">
+                <!-- card 1 -->
+                <div class="exp_card exp_edu_card bg-whiteColor
+                dark:bg-darkBodycolor p-5 rounded-2xl
+                hover:bg-primaryColorLight
+                dark:hover:bg-primaryColorLight duration-300">
+                 <p class="text-primaryColorLight text-sm
+                 font-bold pb-3">Jun 2025-Present</p>
+                 <p class="text-xl font-bold uppercase lg:text-2xl
+                 xl:text-3xl">Internship Trainee</p>
+                 <p>Bridgeon Solutions, Kerala</p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="exp_card exp_edu_card bg-whiteColor
+                dark:bg-darkBodycolor p-5 rounded-2xl
+                hover:bg-primaryColorLight
+                dark:hover:bg-primaryColorLight duration-300">
+                 <p class="text-primaryColorLight text-sm
+                 font-bold pb-3">Apr 2022-Oct 2023</p>
+                 <p class="text-xl font-bold uppercase lg:text-2xl
+                 xl:text-3xl">Software Engineer</p>
+                 <p>Beinex Consulting, Kochi</p>
+                </div>
+                
+              </div>
+             </div>
+
+             <!-- education -->
+             <div>
+              <div class="flex items-center gap-3">
+                <div class="text-2xl text-primaryColorLight 
+                md:text-3xl lg:text-4xl">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <h2 class="subtitle">Education</h2>
+              </div>
+
+              <div class="my-10 space-y-5 md:space-y-10">
+                <!-- card 1 -->
+                <div class="edu_card exp_edu_card bg-whiteColor
+                dark:bg-darkBodycolor p-5 rounded-2xl
+                hover:bg-primaryColorLight
+                dark:hover:bg-primaryColorLight duration-300">
+                 <p class="text-primaryColorLight text-sm
+                 font-bold pb-3">2016-2019</p>
+                 <p class="text-xl font-bold uppercase lg:text-2xl
+                 xl:text-3xl"> B.Sc. Electronics</p>
+                 <p>CET College, kerala</p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="exp_card exp_edu_card bg-whiteColor
+                dark:bg-darkBodycolor p-5 rounded-2xl
+                hover:bg-primaryColorLight
+                dark:hover:bg-primaryColorLight duration-300">
+                 <p class="text-primaryColorLight text-sm
+                 font-bold pb-3">2021-2022</p>
+                 <p class="text-xl font-bold uppercase lg:text-2xl
+                 xl:text-3xl">Full Stack Python Developer Course</p>
+                 <p>Luminar Technolab, Kochi</p>
+                </div>
+
+                
+              </div>
+             </div>
+          </div>
+        </section>
+
+        <!-- My skills  -->
+
+        <section class="container" id="skills">
+          <div class="flex flex-col items-center gap-5 text-center">
+            <h2 class="subtitle">My skills</h2>
+            <p class="max-w-2xl">I specialize in building efficient and scalable web applications using Python and Django.
+               With a strong foundation in frontend technologies like HTML5, CSS3, and JavaScript,
+                I craft responsive, user-friendly interfaces that align with modern development standards.</p>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-5 md:gap-10 mt-10">
+            <!-- python-icon  -->
+             <div class=" max-w-44 w-full">
+              <div class="bg-sectionColor dark:bg-darkSectionColor grid 
+              place-items-center px-4 py-7 rounded-3xl space-y-5
+              grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor
+              border border-transparent hover:border-primaryColorLight
+              duration-300">
+                <img src="./images/python.jpeg" alt="python" 
+                class="max-w-16">
+                <p class="text-2xl font-bold 
+                text-primaryColorLight">92%</p>
+              </div>
+              <p class="text-center text-primaryColorLight mt-3
+              capitalize">python</p>
+             </div>
+
+             <!-- django-icon  -->
+             <div class=" max-w-44 w-full">
+              <div class="bg-sectionColor dark:bg-darkSectionColor grid 
+              place-items-center px-4 py-7 rounded-3xl space-y-5
+              grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor
+              border border-transparent hover:border-primaryColorLight
+              duration-300">
+                <img src="./images/django.png" alt="django" 
+                class="max-w-16">
+                <p class="text-2xl font-bold 
+                text-primaryColorLight">92%</p>
+              </div>
+              <p class="text-center text-primaryColorLight mt-3
+              capitalize">Django</p>
+             </div>
+
+             <!-- html-icon  -->
+             <div class=" max-w-44 w-full">
+              <div class="bg-sectionColor dark:bg-darkSectionColor grid 
+              place-items-center px-4 py-7 rounded-3xl space-y-5
+              grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor
+              border border-transparent hover:border-primaryColorLight
+              duration-300">
+                <img src="./images/html.png" alt="html" 
+                class="max-w-16">
+                <p class="text-2xl font-bold 
+                text-primaryColorLight">92%</p>
+              </div>
+              <p class="text-center text-primaryColorLight mt-3
+              capitalize">Html5</p>
+             </div>
+
+             <!-- css-icon  -->
+             <div class=" max-w-44 w-full">
+              <div class="bg-sectionColor dark:bg-darkSectionColor grid 
+              place-items-center px-4 py-7 rounded-3xl space-y-5
+              grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor
+              border border-transparent hover:border-primaryColorLight
+              duration-300">
+                <img src="./images/css.png" alt="css" 
+                class="max-w-16">
+                <p class="text-2xl font-bold 
+                text-primaryColorLight">92%</p>
+              </div>
+              <p class="text-center text-primaryColorLight mt-3
+              capitalize">Css3</p>
+             </div>
+
+             <!-- javascript-icon  -->
+             <div class=" max-w-44 w-full">
+              <div class="bg-sectionColor dark:bg-darkSectionColor grid 
+              place-items-center px-4 py-7 rounded-3xl space-y-5
+              grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor
+              border border-transparent hover:border-primaryColorLight
+              duration-300">
+                <img src="./images/javascript.png" alt="javascript" 
+                class="max-w-16">
+                <p class="text-2xl font-bold 
+                text-primaryColorLight">92%</p>
+              </div>
+              <p class="text-center text-primaryColorLight mt-3
+              capitalize">javaScript</p>
+             </div>
+          </div>
+
+
+        </section>
+
+        <!-- contact  -->
+
+        <section>
+          <div class="flex flex-col md:flex-row-reverse gap-16 md:gap-5
+          md:items-center">
+            <!-- content  -->
+             <div class="space-y-7 md:space-y-10 lg:pl-20 xl:pl-40">
+              <div class="flex items-start gap-4">
+                <div class="text-whiteColor bg-gradient-to-b
+                from-primaryColor to-primaryColorLight h-10 w-10
+                lg:h-14 lg:w-14 rounded-full grid
+                place-items-center">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="space-y-1">
+                  <p class="text-sm">Phone</p>
+                  <p class="font-bold hover:text-primaryColorLight duration-300
+                  cursor-pointer">+91 8714148388</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="text-whiteColor bg-gradient-to-b
+                from-primaryColor to-primaryColorLight h-10 w-10
+                lg:h-14 lg:w-14 rounded-full grid
+                place-items-center">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="space-y-1">
+                  <p class="text-sm">Email</p>
+                  <p class="font-bold hover:text-primaryColorLight duration-300
+                  cursor-pointer">sidharthkadungallur@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="text-whiteColor bg-gradient-to-b
+                from-primaryColor to-primaryColorLight h-10 w-10
+                lg:h-14 lg:w-14 rounded-full grid
+                place-items-center">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div class="space-y-1">
+                  <p class="text-sm">Address</p>
+                  <p class="font-bold hover:text-primaryColorLight duration-300
+                  cursor-pointer">
+                  UC College, Aluva 683102
+                  Ernakulam, Kerala, India</p>
+                </div>
+              </div>
+             </div>
+
+             <!-- contact form  -->
+
+             <form class="flex-1 bg-sectionColor 
+             dark:bg-darkSectionColor border border-primaryColor px-5
+             py-10 rounded-3xl space-y-3"
+              onsubmit="sendMail(event)">
+              
+                <!-- subtitle & description -->
+                <div class="flex flex-col">
+                  <h2 class="subtitle">Let's work together!</h2>
+                  <p class="max-w-2xl py-3">
+                    I create elegantly simple designs and code with passion — it's as straightforward as that!
+                  </p>
+                </div>
+
+                <div class="space-y-3 mt-7">
+                  <div class="flex flex-col md:flex-row items-center gap-3">
+                    <input type="text" id="name" name="name" placeholder="First name" autocomplete="off">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last name" autocomplete="off">
+                  </div>
+
+                  <div class="flex flex-col md:flex-row items-center gap-3">
+                    <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="off">
+                    <input type="text" id="phone" name="phone" placeholder="Phone number" autocomplete="off">
+                  </div>
+                </div>
+
+                <select>
+                  <option selected>Choose a service</option>
+                  <option value="API">API Development</option>
+                  <option value="Dashboard">Dashboard Builder</option>
+                  <option value="Backend">Backend Architecture</option>
+                  <option value="Authentication">Authentication & Authorization</option>
+                </select>
+
+                <div class="space-y-3">
+                  <textarea id="message" name="message" placeholder="Message"></textarea>
+
+                  <button class="btn" type="submit">
+                    <span class="z-10">Send Message</span>
+                  </button>
+                </div>
+              </form>
+
+          </div>
+        </section>
+
+        <!-- footer  -->
+         <footer id="footer" class="bg-sectionColor
+         dark:bg-darkSectionColor py-10">
+          <div class="container flex flex-col items-center gap gap-5">
+            <div class="py-5">
+              <img src="images/download.jpeg" alt="footer logo" class="w-32">
+            </div>
+
+            <div>
+              <ul class="flex flex-wrap justify-center items-center 
+              space-x-3">
+                <li>
+              <a href="#quality_services" class="nav-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#works" class="nav-link">Works</a>
+            </li>
+
+            <li>
+              <a href="#resume" class="nav-link">Resume</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+
+            <li>
+              <a href="#blogs" class="nav-link">Blogs</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+              </ul>
+            </div>
+
+            <div class="text-primaryColorLight">
+              <p>&copy; 2025 All rights reserved by <span class="font-bold">Lightcode</span></p>
+            </div>
+          </div>
+         </footer>
+
+         <!-- scroll up button  -->
+
+         <a href="#" id="scroll_up" class="fixed right-10 -bottom-1/2 
+         bg-primaryColor px-4 py-2 rounded-full text-lg text-whiteColor
+         z-50 hover:translate-y-1 ease-in-duration-200">
+        <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+</html>
